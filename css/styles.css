@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400i|Rubik|Abril+Fatface');
+
 /*========== UNIVERSAL STYLES =========*/
 html, body {
 	height: 100%;
@@ -27,10 +29,12 @@ html, body {
 .home-cover ul {
 	list-style-type: none;
 	display: block;
+	text-align: center;
 }
 
 .home-cover ul li {
 	display: inline-block;
+	padding-right: 10px;
 }
 
 /*======= NAVIGATION STYLES ========*/
@@ -41,15 +45,55 @@ nav.navigation {
 	right: 0;
 }
 
+nav a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #424242;
+	padding: 20px 10px;
+}
+
+nav a:hover {
+	text-decoration: none;	
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+	color: #ecf0f1;
+}
+
 /*======== ABOUT PAGE STYLES ===========*/
 
 .about-wrapper {
 	background-color: #3498db;
 }
 
+.about-cover {
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 120px;
+}
+
+.first-paragraph {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 45px;
+}
+
+.hidden-paragraph {
+	display: none;
+	color: #fff;
+}
+
+.hidden-paragraph:hover {
+	display: show;
+}
+
+
+
 /*======== PROJECTS STYLES ===========*/
 .projects-wrapper {
 	background-color: #27ae60;
+	font-weight: 600;
 }
 
 span.carousel-control-next-icon,

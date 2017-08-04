@@ -9,29 +9,46 @@
 <body>
 	<div class="about-wrapper">
 		<div class="container">
-			<nav class="navigation">
+			<nav class="navigation mt-3">
 				<a href="../index.html" class="active">Home</a>
 				<a href="about.html">About Me</a>
 				<a href="projects.html">Projects</a>
 			</nav>
 			<div class="about-cover">
-				<h5>Hello, My name is Luciano Oliveira and I am a Front End Developer. I am married and I have 3 kids, I live in Boston (now Seattle), and that’s about it. <span>Just Kidding! Here are my favorite things, not necessarily in this particular order:</span></h5>
-				<ol>
-					<li>Coding</li>
-					<li>Spending time with my beautiful wife, watching the sunset from Greenhill Park or watching a good movie</li>
-					<li>My lovely kids</li>
-					<li>Teaching math to my kids (not Really)</li>
-					<li>Traveling</li>
-				</ol>
-				<p>I also love soccer, and watch my Brazilian team as much as I can. The team is Palmer’s and they have cool colors! Love watching the Brazilian Soccer team play, and yes we are the best, no discussions about that. Don’t watch much of MLS… not sure why, I heard Seattle has a very good team. I like American Football as well, and Yes, I also root for the best team, the Patriots … what can I say, I’m a lucky guy when it comes to rooting for champions.</p>
-				<p>I am originally from Sao Paulo, Brazil and I moved to the US in 1996. I was a Recruiter for the most part of my professional life, about 15 years, and I have been a Front End Developer for the past year. I am currently attending Epicodus to hone my skills, and yes they are awesome!</p>
-				<p>Favorite bands include The Smiths, The Cure, U2, Pear Jam, New Order, David Bowie, Jamiroquai, Suede, The Clash, Echo & the Bunnymen, Beatles, Pixies, Talking Heads and More recently Young The Giant and Florence + The Machine. </p>
-				<p>Movies and TV, definitely a big fan of Game of Thrones, Pulp Fiction (my all time favorite), Shawshank Redemption, The Commitments, City of God and more recently La La Land and Manchester by the Sea. If you tell me me that you love all these bands and movies, I will divorce my wife and marry you.</p>
-				<p>When I am not coding, which is rare, I am cuddling with my lovely wife and kids. so if you are a hit man looking for me, shouldn't be hard to find me.</p>
+				<h5><span class="first-paragraph">Hello, My name is Luciano Oliveira and I am a Front End Developer. I am married and I have 3 kids, I live in Boston (now Seattle), and that’s all she wrote...*</span></h5>
+				<div class="hidden-paragraph">
+					<p>*Well... since you still around, doesn't hurt to tell you a bit more about me. I like these things:</p>
+					<ol>
+						<li>Coding</li>
+						<li>Spending time with my beautiful wife, watching the sunset from Greenhill Park or watching a good movie</li>
+						<li>My lovely kids</li>
+						<li>Teaching math to my kids (not Really)</li>
+						<li>Traveling</li>
+					</ol>
+					<p>I also love soccer, and watch my Brazilian team (Palmeiras) as much as I can. Love watching the Brazilian Soccer team play, and yes we are the best, no discussions about that. Don’t watch much of MLS… not sure why, I heard Seattle has a very good team. I like American Football as well, and Yes, I also root for the best team, the Patriots … That's how I roll when it comes to sports.</p>
+					<p>I am originally from Sao Paulo, Brazil and I moved to the US in 1996. I was a Recruiter for the most part of my professional life, about 15 years, and I have been a Front End Developer for the past year. I am currently attending Epicodus to hone my skills, and yes they are awesome!</p>
+					<p>Favorite bands include The Smiths, The Cure, U2, Pear Jam, New Order, David Bowie, Jamiroquai, Suede, The Clash, Echo & the Bunnymen, Beatles, Pixies, Talking Heads and More recently Young The Giant and Florence + The Machine. </p>
+					<p>Movies and TV, definitely a big fan of Game of Thrones, Pulp Fiction (my all time favorite), Shawshank Redemption, The Commitments, City of God and more recently La La Land and Manchester by the Sea.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.first-paragraph').hover(
+		  function () {
+		    $('.hidden-paragraph').show();
+		  }, 
+		  function () {
+		    $('.hidden-paragraph').hide();
+		  }
+		);
+		$('.first-paragraph').click(function(){
+ 			console.log('clicked');
+		});
+	});
+	</script>
 </body>
 </html>
