@@ -101,6 +101,15 @@ ol.carousel-indicators {
 	margin: 20px 0 0 0;
 }
 
+.mask-text a {
+	color: #fff;
+	padding-right: 10px;
+}
+
+.mask-text a:hover {
+	color: #2ecc71;
+}
+
 .mask-effect img {
 	transition: all 0.2s linear;
 }
@@ -120,14 +129,4 @@ ol.carousel-indicators {
 	opacity: 1;
 }
 
-.mask-effect:hover h3,
-.mask-effect:hover p,
-.mask-effect:b {
-	opacity: 1;
-	transform: translateY(0px);
-}
-
-.mask-effect:hover p {
-	transition-delay: 0.1s;
-}
 
