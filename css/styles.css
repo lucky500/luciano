@@ -70,7 +70,64 @@ ol.carousel-indicators {
 }
 
 .carousel img {
-	border: 10px solid #bdc3c7;
+	border: 10px solid #262626;
 	width: 865px;
 	height: 604px;
 }
+
+/*Hover Effect*/
+
+.carousel-item .mask, .carousel-item .content {
+	width: 865px;
+	height: 604px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.carousel-item h3 {
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.mask-text {
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 340px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.8);
+	margin: 20px 0 0 0;
+}
+
+.mask-effect img {
+	transition: all 0.2s linear;
+}
+
+.mask-effect .mask {
+	opacity: 0;
+	background-color: rgba(236, 240, 241, 0.6);
+	transition: all 0.4s ease-in-out;
+}
+
+
+.mask-effect:hover img {
+	transform: scale(1.1);
+}
+
+.mask-effect:hover .mask {
+	opacity: 1;
+}
+
+.mask-effect:hover h3,
+.mask-effect:hover p,
+.mask-effect:b {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.mask-effect:hover p {
+	transition-delay: 0.1s;
+}
+
