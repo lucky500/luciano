@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400i|Rubik|Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400i|Rubik|Abril+Fatface|Anton');
 
 /*========== UNIVERSAL STYLES =========*/
 html, body {
@@ -20,6 +20,11 @@ html, body {
 
 .home-cover {
 	max-width: 50%;
+}
+
+.home-cover h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 3em;
 }
 
 .home-cover h3 {
@@ -86,6 +91,7 @@ nav a:focus {
 
 .hidden-paragraph:hover {
 	display: show;
+	font-size: 17px;
 }
 
 

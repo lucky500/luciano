@@ -36,19 +36,11 @@
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script>
-	$(document).ready(function(){
 		$('.first-paragraph').hover(
 		  function () {
-		    $('.hidden-paragraph').show();
-		  }, 
-		  function () {
-		    $('.hidden-paragraph').hide();
+		    $('.hidden-paragraph').show(1000);
 		  }
 		);
-		$('.first-paragraph').click(function(){
- 			console.log('clicked');
-		});
-	});
 	</script>
 </body>
 </html>
