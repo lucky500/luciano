@@ -51,3 +51,26 @@ nav.navigation {
 .projects-wrapper {
 	background-color: #27ae60;
 }
+
+span.carousel-control-next-icon,
+span.carousel-control-prev-icon {
+	position: relative;
+}
+
+span.carousel-control-next-icon {
+	right: -99px;
+}
+
+span.carousel-control-prev-icon {
+	left: -96px;
+}
+
+ol.carousel-indicators {
+	bottom: -44px;
+}
+
+.carousel img {
+	border: 10px solid #bdc3c7;
+	width: 865px;
+	height: 604px;
+}
