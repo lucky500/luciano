@@ -1,5 +1,11 @@
+/*========== UNIVERSAL STYLES =========*/
 html, body {
 	height: 100%;
+}
+
+/*========= HOME PAGE STYLES ==========*/
+
+.home-wrapper {
 	background-color: #bdc3c7;
 }
 
@@ -10,21 +16,33 @@ html, body {
 	justify-content: center;
 }
 
+.home-cover {
+	max-width: 50%;
+}
+
+.home-cover h3 {
+	text-align: center;
+}
+
+.home-cover ul {
+	list-style-type: none;
+	display: block;
+}
+
+.home-cover ul li {
+	display: inline-block;
+}
+
+/*======= NAVIGATION STYLES ========*/
+
 nav.navigation {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
-.cover {
-	max-width: 50%;
-}
+/*======== ABOUT PAGE STYLES ===========*/
 
-ul {
-	list-style-type: none;
-	display: block;
-}
-
-ul li {
-	display: inline-block;
+.about-wrapper {
+	background-color: #3498db;
 }
